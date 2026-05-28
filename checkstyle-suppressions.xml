@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suppressions PUBLIC
+        "-//Checkstyle//DTD SuppressionFilter Configuration 1.0//EN"
+        "https://checkstyle.org/dtds/suppressions_1_0.dtd">
+
+<!-- example: https://maven.apache.org/plugins/maven-checkstyle-plugin/examples/suppressions-filter.html -->
+
+<suppressions>
+    <!-- suppress abbreviation warnings: CSVParser will not trigger mvn checkstyle -->
+    <suppress checks="AbbreviationAsWordInName"
+              files=".java"/>
+    <!-- suppress naming warnings: Underscore lambda variables will not trigger mvn checkstyle -->
+    <suppress checks="LambdaParameterName"
+              files=".java"/>
+    <!-- suppress variable declaration usage distance:  -->
+    <suppress checks="VariableDeclarationUsageDistance"
+              files=".java"/>
+</suppressions>
